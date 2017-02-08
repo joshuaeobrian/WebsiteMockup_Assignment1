@@ -1,0 +1,124 @@
+body{
+	margin-left: 10%;
+	margin-right:10%;
+	background:#000;
+}
+.back1{
+	background:#ffffff;
+}
+
+.nav a:hover{
+	border-bottom: solid;
+}
+.nav{
+	
+	padding-right: 10px;
+	/*padding-bottom: 10px;*/
+}
+.nav li, .account li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	
+}
+.right{
+	margin-left: 40%;
+	margin-right: 5px;
+	align-content:  right;
+}
+.rBottom{
+	margin-left: 30%;
+	margin-right: 5px;
+	align-content:  right;
+}
+.nav a, .account a{
+	text-decoration: none;
+	color: #FF7C5B;
+
+}
+
+.overview li{
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 2%;
+}
+.overview a{
+	text-decoration: none;
+	color:#ffffff;
+	padding-top: 75px;
+	margin-top: 20px;
+	margin-left: 200px;
+}
+.season{
+	color:#D00000;
+	
+}
+table{
+	margin-left: 15%;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+td{
+
+	padding-right: 80px;
+}
+.overview p{
+	border-bottom: dashed;
+	border-color:  #D00000;
+}
+.sub p{
+	color: #4B2B1D;
+	border-bottom: none;
+}
+.sub ul{
+	align-content: center;
+}
+button{
+	padding: 10px 20px;
+	font-size: 14px;
+	color: #FF5421;
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+.overview{
+	color: #ffffff;
+	margin-bottom: 20px;
+  background: #F9423E; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #F9423E, #E01E74); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #F9423E, #E01E74); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #F9423E, #E01E74); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #F9423E, #E01E74); /* Standard syntax */
+}
+.overview a{
+	margin-top: 20px;
+	padding-top:20px;
+}
+/*.bImage{
+	width: auto;
+	height:auto;
+	max-width: 15%;
+	max-height: 15%;
+}*/
+.buttonArea button{
+	padding: 5px;
+}
+
+.shop{
+	background:#FDEAF0;
+	color: #4B2B1D;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.detail li{
+	display: inline-block;
+	color: #D8A49D;
+	padding: 10px;
+}
+
+.dFormat{
+	margin-left: 10%;
+}
