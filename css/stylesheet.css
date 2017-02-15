@@ -1,6 +1,6 @@
 /***************Testing***************************/
 /*{
-	border: 1px solid green;
+	Revision 2/14/2017
 
 }*/
 
@@ -18,7 +18,12 @@ h1,h2,h3{
 .layer1{
 	background-color: #ffffff;
 }
-
+.clearfix{
+	clear: both;
+	zoom:1;
+	overflow: auto;
+	
+}
 /**************Navigation section****************/
 .nav1, .nav2, .siteInfo{
 	padding:20px 0 20px 10px;
@@ -38,10 +43,7 @@ h1,h2,h3{
 }
 /******************** Footer **********************/
 
-.clearfix{
-	clear: both;
-	
-}
+
 
 .siteMap li{
 	display: inline-block;
@@ -67,14 +69,30 @@ h1,h2,h3{
 .banner1 a{
 	text-decoration: none;
 	color:#ffffff;
-	padding:20px 0 20px 0;
-	margin:30px 0 30px 175px;
+	/*padding:20px 0 20px 0;*/
+	/*margin:30px 0  175px;*/
 }
-/*table content section*/
+
 .thisProduct{
 	margin: 30px 150px 20px 150px;
 	padding-bottom: 30px;
 	
+}
+.left, .right{
+	width:45%;
+}
+.left{
+	float:left;
+}
+.left img{
+	padding-top:20px;
+	margin-top:20px;
+}
+.right{
+	float: right;
+	padding-left: 50px;
+	padding-right: 50px;
+
 }
 .thisProduct p{
 	padding-top: 30px;
@@ -98,10 +116,7 @@ h1,h2,h3{
 	border-bottom: 2px dashed #D00000;
 
 }
-.ProductContent{
-	padding-left: 50px;
-	padding-right: 50px;
-}
+
 .description{
 	padding-bottom: 20px;
 }
