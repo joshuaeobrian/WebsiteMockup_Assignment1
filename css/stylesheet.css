@@ -21,29 +21,33 @@ h1,h2,h3{
 .clearfix{
 	clear: both;
 	zoom:1;
-	overflow: auto;
-	
+	overflow: auto;	
+}
+.sizeFitPage,.ratingPage{
+	visibility:hidden;
 }
 /**************Navigation section****************/
 .nav1, .nav2, .siteInfo{
 	padding:20px 0 20px 10px;
 	display: inline-block;
 }
-.nav1 a:hover, .nav2 a:hover, .contetnNav a:hover{
-	border-bottom: solid;
-}
+
 .nav1 a,.nav2 a, .content a{
 	text-decoration: none;
 	color: #FF7C5B;
 	padding: 5px;
 }
+.nav1 a:hover, .nav2 a:hover, .contetnNav a:hover{
+	border-bottom: solid;
+}
 .nav2, .siteInfo{
 	float: right;
 	margin-right: 10px;
 }
+.nav1 .active, .nav2 .active{
+	border-bottom: 5px solid;
+}
 /******************** Footer **********************/
-
-
 
 .siteMap li{
 	display: inline-block;
@@ -79,7 +83,7 @@ h1,h2,h3{
 	
 }
 .left, .right{
-	width:45%;
+	width:40%;
 }
 .left{
 	float:left;
@@ -94,13 +98,14 @@ h1,h2,h3{
 	padding-right: 50px;
 
 }
-.thisProduct p{
+.right p{
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.thisProduct a{
+.right a{
 	margin-top: 30px;
 	padding-top: 30px;
+	padding-left:20%;
 	text-decoration: underline;
 	color:#D00000;
 }
@@ -150,6 +155,8 @@ button{
 button:hover{
 	color: #ffffff;
 	background-color: #FF5421;
+	border: 2px solid #fff;
+	
 }
 .shopBanner{
 	background:#FDEAF0;
@@ -161,22 +168,33 @@ button:hover{
 /********Banner 2********/
 .Products{
 	margin: auto;
-	padding-left: 350px;
+	padding: 2% 10%;
 	
+}
+.Product:hover{
+	transform: scale(1.2);
+	background: rgba(0,0,0,0.15);
+
+	padding: 10px;
 }
 .Product{
 	display: inline-block;
-	margin: 20px 20px;
+	margin: 1% 5%;
 	word-spacing: 1px;	
 }
+
 .Product a{
 	text-decoration: none;
 	color:#fff;
 	padding-left: 125px;
 }
-
-
 /*******************Content Section******************/
+/* content nav*/
+.contentNav{
+	padding-top: 30px;
+}
+
+
 /*selection*/
 .content li{
 	display: inline-block;
@@ -197,7 +215,6 @@ button:hover{
 .content{
 	padding-bottom: 75px;
 }
-
 
 /*************************************/
 

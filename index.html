@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<!-- Revision 2/14/2017 -->
+<!-- Revision 2/16/2017 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/main.js"></script> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link href="https://fonts.googleapis.com/css?family=Jaldi|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -10,18 +12,18 @@
 <body>
 	<div class="layer1">
 		<header>
-			<nav class="nav1">
+			<nav class="nav1" id="nav1">
 				<img src="images/logo.jpg" width="35" height="25" align="top">
 				<a href="#">Men</a>
 				<a href="#">Women</a>
 				<a href="#">Boys</a>
 				<a href="#">Girls</a>
-				<a href="#">Customize</a>				
+				<a href="#">Customize</a>		
 			</nav>
 			<nav class="nav2">			
 				<a href="#">Help</a>
 				<a href="#">My Account</a>
-				<a href="#"><img src="images/cart.jpg" width="25" height="15"> Shopping Cart (2)</a>			
+				<a href="#"><img src="images/cart.jpg" width="25" height="15"> Shopping Cart (<span id="count">0</span>)</a>			
 			</nav>
 			
 		</header>
@@ -37,34 +39,44 @@
 				<h1>Quick Sneakers</h1>
 				<p><span class="season">Spring/Summer 2017</span></p>
 				
-				<p>ipsum dolor sit veniam, here are some more words about shoes and shores and bores and more buy buy buy words.<a href="#">Read The Reviews</a></p>
+				<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess cillum dolore eu fugiat nulla pariatur.<a href="#">Read The Reviews</a></p>
 				
 				<h1 class="select">$120 <sup>00</sup></h1>	
-				<button class="select" id="buyNow">Buy Now!</button>
+				<button class="select" id="buyNow">BUY NOW!</button>
 			</div>
 		</div>
 		</section>
 		<!-- Content -->
 		<section class="content">
 			<ul class="contentNav">
-				<li><a href="#">Product Detail</a></li>
-				<li><a href="#">Size & Fit</a></li>
-				<li class="rating">Reviews &#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</li>
+				<li id='productDetailLink'><a href="#productDetailPage">Product Detail</a></li>
+				<li><a id="sizeFitLink" href="#sizeFitPage">Size & Fit</a></li>
+				<li class="rating"><a href="#">Reviews &#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</a></li>
 			</ul>
-			<h2>Exciting Topic</h2>
-			<p>Content Here</p>
-			<h3>Exciting Topic</h3>
-			<p>Content Here</p>
-			<br>
-			<h2>Find Your Shoe Size & Fit</h2>
-			<p>Content Here</p>
-			<br>
-			<h2>What Our Customers Are Saying!</h2>
-			<p>Don't take our word for it! Read what our customers have been saying about this Product. We guarantee you want be disappointed in your purchase.</p>
+			<div class="productDetailPage">
+				<h2>Exciting Topic</h2>
+				<p>Content Here</p>
+				<h3>Exciting Topic</h3>
+				<p>Content Here</p>
+			</div>
+			<!-- size link -->
+			<div class="sizeFitPage">
+				<h2>Find Your Shoe Size & Fit</h2>
+				<p>Content Here</p>
+			</div>
+			<!-- rating starts -->
+			<div class='ratingPage'>
+				<h2>What Our Customers Are Saying!</h2>
+				<p>Don't take our word for it! Read what our customers have been saying about this Product. We guarantee you want be disappointed in your purchase.</p>
+			</div>
 		</section>
 		<section class="banner2">
-			<h2 class="shopBanner">Shop Reccomended Shoes</h2>
+			<h2 class="shopBanner">Shop Reccommended Shoes</h2>
 			<div class="Products">
+			<!-- Add hover on items zoom and change background -->
 				<div class="Product">
 					<img src="images/shoe2.png" width="300" height="200">
 					<h3>Funny Sneakers<a href="#">$120 <sup>00</sup></a></h3>
@@ -100,5 +112,7 @@
 			</nav>
 		</footer>
 	</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
